@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    check scm
+    checkout scm
   }
   stage('SonarQube analysis') {
     withSonarQubeEnv('sonarqube') {
